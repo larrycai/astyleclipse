@@ -1,0 +1,137 @@
+* {
+	font-family: "Lucida Grande",Lucida,Verdana,Arial,sans-serif;
+	font-size: 1em;
+	line-height: 1.2em;
+}
+
+html, body { 
+	background:#fafafa;	
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;	
+}
+
+/* Layout Styles */
+
+.logo {
+	position: absolute;
+	top: 0px;	
+	left: 0px;
+}
+.sfLogo {
+	margin-top: 30px;
+	margin-left: 30px;	
+	border: none;
+}
+.friendLogo {
+/* updated by larry from 30->10px */
+	margin-top: 10px;
+	margin-left: 30px;	
+	border: none;
+}
+.mainTable {	
+	border-collapse: collapse;
+	border-style: none;
+	width: 100%;
+	height: 100%;
+	background-image: url("logo.jpg");
+	background-repeat: no-repeat;
+}
+.leftBar {
+	width: 180px;
+	vertical-align: top;
+	font-size: 12px;
+	color: black;
+	padding: 0;
+	margin: 0;	
+	background-color: #eaeae2;
+}
+.topLeft {
+	height: 42px;	
+}
+.topLeft img {
+	border: none;
+}
+.topRight {
+	background-color: #eaeae2;		
+	height: 42px;
+}
+.headerLinks {
+	font-size: 0.6em;	
+	float: right;
+	margin-right: 15px;
+	margin-top: 15px;
+	color: black;
+}
+.headerLinks A {
+	font-size: 12px;	
+	text-decoration: none;
+	color: black;
+}
+
+
+/* Menu Styles */
+
+.menu {
+	width: 160px;
+	margin: 40px 5px 0 10px;
+}
+.menu A {
+	color: black;
+	padding: 0;
+	margin: 0;		
+	font-weight: normal;
+	text-decoration: none;
+}
+.menu UL {
+	padding: 0;
+	margin: 0px 0 0px 12px;	
+}
+.menu LI {
+	padding: 0;
+	margin: 0px 0 0 10px;	
+	font-weight: bold;
+}
+
+/* Content Styles */
+
+.content {
+	vertical-align: top;
+	background-image: url("leftcorner.jpg");
+	background-repeat: no-repeat;
+	padding: 20px 5px 30px 40px;	
+}
+.content {
+	font-size: 12px;
+}
+.content H1 {
+	font-size: 17px;
+}
+.content img {
+	margin-left: 25px;
+	border: none;
+}
+.content P {
+	max-width: 650px;	
+}
+.content UL {
+	max-width: 500px;
+}
+.content LI {
+	margin-top: 3px;
+}
+.content GREEN {
+	background-color: rgb(149,206,145);
+	font-style: bold;
+}
+
+
+
+
+
+
+
+
+
+
