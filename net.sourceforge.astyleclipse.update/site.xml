@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/net.sourceforge.astyleclipse.feature_1.0.100.v200610041240.jar" id="net.sourceforge.astyleclipse.feature" version="1.0.100.v200610041240">
+      <category name="Astyle source code formatter"/>
+   </feature>
+   <category-def name="Astyle source code formatter" label="astyle source code formatter">
+      <description>
+         Astyle eclipse plugin for source code formatter in eclipse CDT environment
+      </description>
+   </category-def>
+</site>
