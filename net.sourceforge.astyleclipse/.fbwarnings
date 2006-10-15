@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="1.1.0" sequence="0" timestamp="-1" analysisTimestamp="1159063948075" release="">
+  <Project filename="&lt;&lt;unnamed project&gt;&gt;">
+    <Jar>F:\larry\workspaceplugin\net.sourceforge.astyleclipse\bin\net\sourceforge\astyleclipse\astyle\AStyle.class</Jar>
+    <Jar>F:\larry\workspaceplugin\net.sourceforge.astyleclipse\bin\net\sourceforge\astyleclipse\astyle\TestASFormatter.class</Jar>
+    <AuxClasspathEntry>F:\eclipse\plugins\com.cenqua.clover_1.2.9\clover-eclipse.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\larry\workspaceplugin\net.sourceforge.astyleclipse\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.ui_3.2.0.I20060605-1400.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.swt_3.2.0.v3232o.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.swt.win32.win32.x86_3.2.0.v3232m.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.jface_3.2.0.I20060605-1400.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.core.commands_3.2.0.I20060605-1400.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.ui.workbench_3.2.0.I20060605-1400.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.core.runtime_3.2.0.v20060603.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.osgi_3.2.0.v20060601.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.equinox.common_3.2.0.v20060603.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.core.jobs_3.2.0.v20060603.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.core.runtime.compatibility.registry_3.2.0.v20060603\runtime_registry_compatibility.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.equinox.registry_3.2.0.v20060601.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.equinox.preferences_3.2.0.v20060601.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.core.contenttype_3.2.0.v20060603.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.cdt.core_3.1.0.200606261600.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.eclipse.text_3.2.0.v20060605-1400.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>F:\eclipse\plugins\org.junit_3.8.1\junit.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="BC_UNCONFIRMED_CAST" priority="3" abbrev="BC" category="STYLE">
+    <Class classname="net.sourceforge.astyleclipse.astyle.ASBeautifier">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.ASBeautifier" sourcefile="ASBeautifier.java" sourcepath="net/sourceforge/astyleclipse/astyle/ASBeautifier.java"/>
+    </Class>
+    <Method classname="net.sourceforge.astyleclipse.astyle.ASBeautifier" name="&lt;init&gt;" signature="(Lnet/sourceforge/astyleclipse/astyle/ASBeautifier;)V" isStatic="false">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.ASBeautifier" start="82" end="147" startBytecode="0" endBytecode="251" sourcefile="ASBeautifier.java" sourcepath="net/sourceforge/astyleclipse/astyle/ASBeautifier.java"/>
+    </Method>
+    <Type descriptor="Ljava/util/Stack;"/>
+    <Type descriptor="Lnet/sourceforge/astyleclipse/astyle/util/StringStack;"/>
+    <SourceLine classname="net.sourceforge.astyleclipse.astyle.ASBeautifier" start="88" end="88" startBytecode="39" endBytecode="39" sourcefile="ASBeautifier.java" sourcepath="net/sourceforge/astyleclipse/astyle/ASBeautifier.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="net.sourceforge.astyleclipse.astyle.ASBeautifier">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.ASBeautifier" sourcefile="ASBeautifier.java" sourcepath="net/sourceforge/astyleclipse/astyle/ASBeautifier.java"/>
+    </Class>
+    <Field classname="net.sourceforge.astyleclipse.astyle.ASBeautifier" name="preprocessorHeaders" signature="Lnet/sourceforge/astyleclipse/astyle/util/StringStack;" isStatic="true">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.ASBeautifier" sourcefile="ASBeautifier.java" sourcepath="net/sourceforge/astyleclipse/astyle/ASBeautifier.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="net.sourceforge.astyleclipse.astyle.ASFormatterBeanInfo$BracketFormatModePropertyEditor">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.ASFormatterBeanInfo$BracketFormatModePropertyEditor" sourcefile="ASFormatterBeanInfo.java" sourcepath="net/sourceforge/astyleclipse/astyle/ASFormatterBeanInfo.java"/>
+    </Class>
+    <Method classname="net.sourceforge.astyleclipse.astyle.ASFormatterBeanInfo$BracketFormatModePropertyEditor" name="setAsText" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.ASFormatterBeanInfo$BracketFormatModePropertyEditor" start="166" end="172" startBytecode="0" endBytecode="61" sourcefile="ASFormatterBeanInfo.java" sourcepath="net/sourceforge/astyleclipse/astyle/ASFormatterBeanInfo.java"/>
+    </Method>
+    <SourceLine classname="net.sourceforge.astyleclipse.astyle.ASFormatterBeanInfo$BracketFormatModePropertyEditor" start="168" end="168" startBytecode="23" endBytecode="23" sourcefile="ASFormatterBeanInfo.java" sourcepath="net/sourceforge/astyleclipse/astyle/ASFormatterBeanInfo.java"/>
+    <String value="Integer(int)"/>
+    <String value="Integer.valueOf(int)"/>
+    <SourceLine classname="net.sourceforge.astyleclipse.astyle.ASFormatterBeanInfo$BracketFormatModePropertyEditor" start="148" end="148" startBytecode="0" endBytecode="0" sourcefile="F:\larry\workspaceplugin\net.sourceforge.astyleclipse\src\net\sourceforge\astyleclipse\astyle\ASFormatterBeanInfo.java" sourcepath="net/sourceforge/astyleclipse/astyle/F:\larry\workspaceplugin\net.sourceforge.astyleclipse\src\net\sourceforge\astyleclipse\astyle\ASFormatterBeanInfo.java"/>
+  </BugInstance>
+  <BugInstance type="DM_CONVERT_CASE" priority="3" abbrev="Dm" category="I18N">
+    <Class classname="net.sourceforge.astyleclipse.astyle.AStyle">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.AStyle" sourcefile="AStyle.java" sourcepath="net/sourceforge/astyleclipse/astyle/AStyle.java"/>
+    </Class>
+    <Method classname="net.sourceforge.astyleclipse.astyle.AStyle" name="stringEndsWith" signature="(Ljava/lang/String;Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.AStyle" start="461" end="461" startBytecode="0" endBytecode="11" sourcefile="AStyle.java" sourcepath="net/sourceforge/astyleclipse/astyle/AStyle.java"/>
+    </Method>
+    <SourceLine classname="net.sourceforge.astyleclipse.astyle.AStyle" start="461" end="461" startBytecode="1" endBytecode="1" sourcefile="AStyle.java" sourcepath="net/sourceforge/astyleclipse/astyle/AStyle.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="3" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="net.sourceforge.astyleclipse.astyle.AStyle">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.AStyle" sourcefile="AStyle.java" sourcepath="net/sourceforge/astyleclipse/astyle/AStyle.java"/>
+    </Class>
+    <Method classname="net.sourceforge.astyleclipse.astyle.AStyle" name="error" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.AStyle" start="248" end="250" startBytecode="0" endBytecode="33" sourcefile="AStyle.java" sourcepath="net/sourceforge/astyleclipse/astyle/AStyle.java"/>
+    </Method>
+    <SourceLine classname="net.sourceforge.astyleclipse.astyle.AStyle" start="249" end="249" startBytecode="30" endBytecode="30" sourcefile="AStyle.java" sourcepath="net/sourceforge/astyleclipse/astyle/AStyle.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="3" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="net.sourceforge.astyleclipse.astyle.AStyle">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.AStyle" sourcefile="AStyle.java" sourcepath="net/sourceforge/astyleclipse/astyle/AStyle.java"/>
+    </Class>
+    <Method classname="net.sourceforge.astyleclipse.astyle.AStyle" name="parseOption" signature="(Lnet/sourceforge/astyleclipse/astyle/ASFormatter;Ljava/lang/String;Ljava/lang/String;)Z" isStatic="true">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.AStyle" start="282" end="407" startBytecode="0" endBytecode="1043" sourcefile="AStyle.java" sourcepath="net/sourceforge/astyleclipse/astyle/AStyle.java"/>
+    </Method>
+    <SourceLine classname="net.sourceforge.astyleclipse.astyle.AStyle" start="402" end="402" startBytecode="1010" endBytecode="1010" sourcefile="AStyle.java" sourcepath="net/sourceforge/astyleclipse/astyle/AStyle.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED" priority="1" abbrev="RV" category="CORRECTNESS">
+    <Class classname="net.sourceforge.astyleclipse.astyle.AStyle">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.AStyle" sourcefile="AStyle.java" sourcepath="net/sourceforge/astyleclipse/astyle/AStyle.java"/>
+    </Class>
+    <Method classname="net.sourceforge.astyleclipse.astyle.AStyle" name="parseOptions" signature="(Lnet/sourceforge/astyleclipse/astyle/ASFormatter;Ljava/util/Vector;Ljava/lang/String;)Z" isStatic="true">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.AStyle" start="254" end="277" startBytecode="0" endBytecode="176" sourcefile="AStyle.java" sourcepath="net/sourceforge/astyleclipse/astyle/AStyle.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="concat" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="net.sourceforge.astyleclipse.astyle.AStyle" start="268" end="268" startBytecode="117" endBytecode="117" sourcefile="AStyle.java" sourcepath="net/sourceforge/astyleclipse/astyle/AStyle.java"/>
+  </BugInstance>
+  <BugInstance type="UPM_UNCALLED_PRIVATE_METHOD" priority="3" abbrev="UPM" category="PERFORMANCE">
+    <Class classname="net.sourceforge.astyleclipse.astyle.AStyle">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.AStyle" sourcefile="AStyle.java" sourcepath="net/sourceforge/astyleclipse/astyle/AStyle.java"/>
+    </Class>
+    <Method classname="net.sourceforge.astyleclipse.astyle.AStyle" name="stringEndsWith" signature="(Ljava/lang/String;Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.AStyle" start="461" end="461" startBytecode="0" endBytecode="11" sourcefile="AStyle.java" sourcepath="net/sourceforge/astyleclipse/astyle/AStyle.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="net.sourceforge.astyleclipse.astyle.util.ASBeautifierStack">
+      <SourceLine classname="net.sourceforge.astyleclipse.astyle.util.ASBeautifierStack" sourcefile="ASBeautifierStack.java" sourcepath="net/sourceforge/astyleclipse/astyle/util/ASBeautifierStack.java"/>
+    </Class>
+  </BugInstance>
+  <Errors></Errors>
+  <FindBugsSummary timestamp="Sat, 23 Sep 2006 15:41:07 +0800" total_classes="13" total_bugs="1370" total_size="0" num_packages="3" cpu_seconds="1661.00" clock_seconds="13582.57" peak_mbytes="328.76" gc_seconds="628.59" priority_3="12" priority_2="1357" priority_1="1">
+    <PackageStats package="net.sourceforge.astyleclipse" total_bugs="28" total_types="2" total_size="0" priority_2="28">
+      <ClassStats class="net.sourceforge.astyleclipse.Activator" interface="false" size="0" bugs="5" priority_2="5"/>
+      <ClassStats class="net.sourceforge.astyleclipse.AstyleFormatter" interface="false" size="0" bugs="23" priority_2="23"/>
+    </PackageStats>
+    <PackageStats package="net.sourceforge.astyleclipse.astyle" total_bugs="1303" total_types="6" total_size="0" priority_3="7" priority_2="1295" priority_1="1">
+      <ClassStats class="net.sourceforge.astyleclipse.astyle.ASBeautifier" interface="false" size="0" bugs="602" priority_3="1" priority_2="601"/>
+      <ClassStats class="net.sourceforge.astyleclipse.astyle.ASFormatter" interface="false" size="0" bugs="433" priority_3="2" priority_2="431"/>
+      <ClassStats class="net.sourceforge.astyleclipse.astyle.ASFormatterBeanInfo" interface="false" size="0" bugs="9" priority_2="9"/>
+      <ClassStats class="net.sourceforge.astyleclipse.astyle.ASFormatterBeanInfo$BracketFormatModePropertyEditor" interface="false" size="0" bugs="7" priority_2="7"/>
+      <ClassStats class="net.sourceforge.astyleclipse.astyle.ASStreamIterator" interface="false" size="0" bugs="3" priority_2="3"/>
+      <ClassStats class="net.sourceforge.astyleclipse.astyle.AStyle" interface="false" size="0" bugs="249" priority_3="4" priority_2="244" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="net.sourceforge.astyleclipse.astyle.util" total_bugs="39" total_types="5" total_size="0" priority_3="5" priority_2="34">
+      <ClassStats class="net.sourceforge.astyleclipse.astyle.util.ASBeautifierStack" interface="false" size="0" bugs="7" priority_3="1" priority_2="6"/>
+      <ClassStats class="net.sourceforge.astyleclipse.astyle.util.BooleanStack" interface="false" size="0" bugs="8" priority_3="1" priority_2="7"/>
+      <ClassStats class="net.sourceforge.astyleclipse.astyle.util.IntegerStack" interface="false" size="0" bugs="10" priority_3="1" priority_2="9"/>
+      <ClassStats class="net.sourceforge.astyleclipse.astyle.util.StackStack" interface="false" size="0" bugs="7" priority_3="1" priority_2="6"/>
+      <ClassStats class="net.sourceforge.astyleclipse.astyle.util.StringStack" interface="false" size="0" bugs="7" priority_3="1" priority_2="6"/>
+    </PackageStats>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension
+         id="net.sourceforge.astyleclipse"
+         name="Astyle Eclipse"
+         point="org.eclipse.cdt.core.CodeFormatter">
+          <codeFormatter class="net.sourceforge.astyleclipse.AstyleFormatter" name="Astyle Plugin" id="net.sourceforge.astyleclipse.AstyleFormatter" />    
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="net.sourceforge.astyleclipse.preferences.AstylePreferencePage"
+            id="net.sourceforge.astyleclipse.preferences.AstylePreferencePage"
+            name="Astyle"/>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer class="net.sourceforge.astyleclipse.preferences.PreferenceInitializer"/>
+   </extension>
+</plugin>
