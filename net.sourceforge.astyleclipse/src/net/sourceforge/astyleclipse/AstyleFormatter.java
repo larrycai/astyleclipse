@@ -103,7 +103,7 @@ public class AstyleFormatter extends CodeFormatter {
 		return null;
 	}
 
-	private Boolean setOptions(ASFormatter formatter) {
+	private boolean setOptions(ASFormatter formatter) {
 		Preferences prefs = Activator.getDefault().getPluginPreferences();
 
 		String style = prefs.getString(PreferenceConstants.STYLE_CHOICE);

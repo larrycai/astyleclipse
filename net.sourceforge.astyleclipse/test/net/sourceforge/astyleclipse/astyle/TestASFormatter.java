@@ -13,7 +13,7 @@ public class TestASFormatter extends TestCase {
 	public void testInit() {
 		// just to make more coverage ;-)
 		// how to test it ?
-		assert(true);
+		assertEquals(true,true);
 	}
 
 	public void testHasMoreLines() {
@@ -51,7 +51,7 @@ public class TestASFormatter extends TestCase {
 
 	public void testASFormatter() {
 		// just to make more coverage ;-)
-		assert(true);
+		assertEquals(true,true);
 	}
 
 	public void testGetBracketFormatMode() {

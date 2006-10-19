@@ -173,7 +173,6 @@ public class AstylePreferencePage extends FieldEditorPreferencePage implements
 		}
 	}
 
-	@Override
 	// comes here as well if Apply button is pressed
 	public boolean performOk() {
 		boolean updateReferenceStore = true;

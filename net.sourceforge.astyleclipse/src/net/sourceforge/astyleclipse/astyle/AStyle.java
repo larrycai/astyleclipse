@@ -274,7 +274,7 @@ public class AStyle implements ASResource {
 	}
 	public static boolean parseOptions(ASFormatter formatter,String options) 
 	{
-		Vector<String> optionsVector = new Vector<String>();
+		Vector optionsVector = new Vector();
 		// check whether it is empty string
 		if(options.trim().length()==0)
 			return true;
@@ -291,12 +291,12 @@ public class AStyle implements ASResource {
 
 	public static boolean parseOptionFile(ASFormatter formatter,
 			String optionFile) {
-		Boolean ok = true;
+		boolean ok = true;
 		// parse file
 		BufferedReader optionsIn;
 		try {
 			optionsIn = new BufferedReader(new FileReader(optionFile));
-			Vector <String> optionsVector = new Vector <String>();
+			Vector optionsVector = new Vector();
 			importOptions(optionsIn,optionsVector);
 			ok = parseOptions(formatter, optionsVector,
 					"Unknown option in default options file: ");
@@ -467,7 +467,7 @@ public class AStyle implements ASResource {
 		return true;
 	}
 
-	public static void importOptions(Reader in, Vector<String> optionsVector)
+	public static void importOptions(Reader in, Vector optionsVector)
 			throws IOException {
 		StringBuffer currentTokenBuf;
 		boolean eof = false;
