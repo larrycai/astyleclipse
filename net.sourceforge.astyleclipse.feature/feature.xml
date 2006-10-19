@@ -2,7 +2,7 @@
 <feature
       id="net.sourceforge.astyleclipse.feature"
       label="Astyleclipse Feature"
-      version="1.0.100.v200610041240"
+      version="1.0.101.v200610192129"
       provider-name="astyleclipse.sf.net">
 
    <description url="http://astyleclipse.sourceforge.net">
@@ -11,7 +11,7 @@ a C/C++ formatter for CDT plugin in eclipse.
    </description>
 
    <copyright>
-      2006 (c) astyleclipse.sourceforge.net All rights are left
+      2006 (c) astyleclipse.sourceforge.net All rights are left.
    </copyright>
 
    <license url="http://www.opensource.org/licenses/eclipse-1.0.php">
