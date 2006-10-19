@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/net.sourceforge.astyleclipse.feature_1.0.100.v200610041240.jar" id="net.sourceforge.astyleclipse.feature" version="1.0.100.v200610041240">
+   <feature url="features/net.sourceforge.astyleclipse.feature_1.0.101.v200610192129.jar" id="net.sourceforge.astyleclipse.feature" version="1.0.101.v200610192129">
       <category name="Astyle source code formatter"/>
    </feature>
    <category-def name="Astyle source code formatter" label="astyle source code formatter">
