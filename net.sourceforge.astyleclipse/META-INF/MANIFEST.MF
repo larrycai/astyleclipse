@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Astyleclipse Plug-in
 Bundle-SymbolicName: net.sourceforge.astyleclipse;singleton:=true
-Bundle-Version: 1.0.100
+Bundle-Version: 1.0.101
 Bundle-ClassPath: astyleclipse.jar
 Bundle-Activator: net.sourceforge.astyleclipse.Activator
 Bundle-Vendor: astyleclipse.sf.net
