@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <title>
+      the way on how to develop a small eclipse plugin
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+	<link href="style.css" media="screen" type="text/css" rel="stylesheet">
+  </head>
+  <body >
+  	<div class="content">
+  		<h1>The way to develop astyleclipse</h1>
+  	<h2>Abstract</h2>
+	By using a real example to describe how to develop a small eclipse plugin in eclipse spirit.
+	<h2>Background</h2>
+	<p>CDT is a eclipse top project for C/C++ development, not like JDT, 
+	it doesn't have formatter tool as default, though it has the extension point there. 
+	And I am eager to have this "plugin" to beautify my legacy codes.</p>
+	<p>I had good experience on programming, but just start to use eclipse for development</p>
+    <h3>Step 1, check whether there is existing eclipse plugin</h3>
+<p>As a spirit of eclipse - <i>"don't reinvent the wheel"</i>, always check whether there are 
+plugins exist already, it can also prevent the competition in the end, think about 
+the <b>"subversive vs subclipse"</b></p>
+<p>
+Google the web, I found there are 2 plugins exist.
+<ul>
+	<li>Simple Indent which call external indent or astyle</li>
+ <li>internal CDT plugin, there is a plugin for indent,</li>
+ </ul> 
+ Ok, do it following the instruction, both of them need the indent/astyle installed first,
+ which feels not good, and both of them doesn t work under solaris platform. Besides this, 
+ one temple file has to be used when invoking external program, it <b>smells bad</b> -
+ need refactoring ;-). Furthermore, the performance is not excellent.
+</p>
+    <h3>Step 2, Thinking of DIY and preparation.</h3>
+<p>
+As a open source fan, I think probably I shall DIY, then check what shall I do before start
+<ul>
+<li>Competence - I have no experience of eclipse plugin , even not a java guru. 
+Fortunately eclipse provides a lot of "HelloWorld" stuff, and also there are so 
+many open guideline for it, which can let me copy/paste a lot of codes.</li> 
+<li>Where to host it - before you want to publish the plugin, you need find a room for it. 
+Fortunately I have experience of using sourceforge.net for a long time, so piece of cake for me.</li>
+<li>Code base - simple strategy is to based on internal CDT plugin and add astyle or indent 
+	codes to do it. Fortunately I googled astyle java portation, which is originally for 
+	jedit plugin.</li>
+</ul>
+</p>
+    <h3>Step 3, DIY</h3>
+<p>Download the CDT's indent plugin, try it and modify to understand how the plugin 
+and extension works, great, I almost have my own plugin.<br/>
+Take a look at astyle java version, it has main function which includes methods I can use, 
+great, copy it into my plugin folder, and play a little bit, Ahhh, it works.<br/>
+Then it is time to publish - <b><i>Deliver early"</i></b>.find a nice name "astyleclipse", which means 
+astyle engine and eclipse plugin. Register it in sf.net. 0.0.3 version. Without preference page, 
+all the options are hard coded.
+One webpage is simple created by coping from others, look nice.</p>
+<p>Before publish, it is better to make it easy to use, follow the example in eclipse PDE, 
+add a preference page for selection different styles. It looks it is a qualified plugin now 
+for normal user, let me see how is the feedback from community to see which I shall deliver 
+in next release. Actually I already have a roadmap in my mind.</p>
+<h3>Step 4, Advertising</h3>
+Where to advertise ?<br/>
+Surely www.eclipseplugincentral.com is the first choice, register a user there and publish, 
+then to see what happens.
+I didn't publish or advertise in other place even in forum, just want to track how the open 
+source works, it is another way to learn the eclipse ecosystem.
+</p>
+<h3>Step 5, Agile way for frequent delivery</h3>
+<p>Luckly one user response quickly with bug/feature request, discuss with him and provide some 
+features that he wanted.<br />
+User's feedback keep me deliver the new version, sometimes just wonder whether I am so frequent.
+</p>
+<h3>Step 6, Next step</h3>
+<p>
+This is a small plugin, I develop it mostly for fun.
+Clover could provide free license for opensource project for quality control, so 
+I can try it for free, wonderful. Later I well request for FishEye
+
+<ul>
+<li>Update manager is added, Subversion is used</li>
+<li>Astyle part will be migrated to latest version (planned in 1.1.0 release)</li>
+<li>Quality and junit will be added (not true TDD this time ;-)</li>
+<li>Longterm plan is already defined</li>
+<li>The best choice is to merge into CDT plugin as it like for JDT, before that, ), and 
+profile shall be added as well, which need me more competence.</li>
+</ul>
+</p>
+<h2>Summary</h2>
+<p>Besides the plugin itself, I am also a fan of agile methodology, so it is a chance for me to 
+practise for a tiny project as well to see how the process of eclipse works
+</p>
+<p>Give me comments if you happened to read this page, larry.caiyu(at)gmail.com</p>
+<h3>Changelog</h3>
+<p>Draft is written in Esslingen am Neckar, Germany after Eclipse Summit Europe 2006</p>
+ 
+	</div>
+  </body>
+</html>
