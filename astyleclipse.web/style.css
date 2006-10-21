@@ -70,7 +70,6 @@ html, body {
 	color: black;
 }
 
-
 /* Menu Styles */
 
 .menu {
@@ -121,9 +120,31 @@ html, body {
 .content LI {
 	margin-top: 3px;
 }
-.content GREEN {
-	background-color: rgb(149,206,145);
-	font-style: bold;
+.content a:link {
+	text-decoration: none;
+	color: #336699;
+}
+
+.content a:visited {
+	text-decoration: none;
+	color: #336699;
+}
+
+.content a:hover {
+    color: rgb(16,131,1); 
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.statuswarning
+{
+    background-color: rgb(222, 119, 38);
+    text-decoration: none;
+}
+.statusok
+{
+    background-color: rgb(149, 206, 145);
+    text-decoration: none;
 }
 
 
