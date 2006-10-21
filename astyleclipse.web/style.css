@@ -107,6 +107,15 @@ html, body {
 .content H1 {
 	font-size: 17px;
 }
+
+.content H2 {
+	font-size: 15px;
+}
+
+.content H3 {
+	font-size: 11px;
+}
+
 .content img {
 	margin-left: 25px;
 	border: none;

@@ -7,24 +7,44 @@
     </title>
     <meta http-equiv="Content-Type" content=
     "text/html; charset=us-ascii">
-    <meta content="MSHTML 6.00.2800.1561" name="GENERATOR">
-		<link href="style.css" media="screen" type="text/css" rel="stylesheet">
+	<link href="style.css" media="screen" type="text/css" rel="stylesheet">
   </head>
-  <body>
-    <h2>
-      Introduction
-    </h2>
+  <body >
+  	<div class="content">
+  	<h2>Introduction</h2>
 		<p>In this page, it aims to provide more design issues for astyle eclipse plugin
 		</p>
-		<h2>Update site</h2>
+	<h2>Development</h2>
+	<h3>Code</h3>
+	<p>format engine comes from <a href="http://astyle.sourceforge.net">astyle</a>, the lastest version is 1.19,
+	 but the used in astyleclipse now is 1.14.<br/>
+	 The Mud 1.1.0 release plan to port 1.19 to java, since there is no request, it is paused.</p>
+	 <p>The plugin part comes from CDT indent plugin, which looks great for a base</p>
+	 <p>Eclipse-LazyStart=true is used in eclipse 3.2, while Eclipse-AutoStart is used
+	 in eclipse 3.1, which is deprecated in eclipse 3.2, so I keep two release</p>
+	 <p>Preference page, preview use SourceView now, i don't know how to use CDT SourceView for preview (need syntax highlight)</p>
+	 <p>It will be good to use profile and more checkbox to control the format options like java format, it
+	 needs more competence on jface, probably could wait for JFACE/JDT provides more API </p>
+	<h3>Version control</h3>
+	<p>Since subversion is the replacement of cvs, and it is supported in sf.net
+	. it is selected. <a href="http://www.polarion.org/index.php?page=overview&project=subversive">
+		Subversive plugin</a> is used to access it, there is another subversion plugin 
+		<a href="http://subclipse.tigris.org/">subclipse</a>, but it seems subversive is more productive</p>
+	<p>Probably could use <a href="http://www.cenqua.com/fisheye/">fisheye</a> for 
+	web access subversion</p>	
+	<h3>Quality control</h3>
+	<p><a href="http://www.cenqua.com/">cenqua</a> provides 
+	<a href="http://www.cenqua.com/clover">clover plugin</a>, which is a powerful Java code 
+	coverage analysis tool for free. 
+	
+		
+	<h3>Update site</h3>
 		<p>Most of things can be done in eclipse, it also suggest to update the update-site.zip for other integrators</p>
 		<ul><li>create feature project to contain the plugin, fill needed license/copyright issues</li>
 		<li>create update project to contain the feature, after build all</li>
 		<li>use <a href="http://winscp.net">WinSCP</a> to upload all the contents into sourceforge.net</li>
 		</ul>
-    <h2>
-      Process
-    </h2>
+    <h2>Process</h2>
     <h2>
       Reference
     </h2>
@@ -33,13 +53,10 @@
       "http://www.eclipse.org/articles/Article-Field-Editors/field_editors.html">
         http://www.eclipse.org/articles/Article-Field-Editors/field_editors.html</a>
       </li>
-      <li>SourceView : ?? how to use CDT SourceView for preview (need syntax highlight)
-      </li>
-			<li>Version number : <a href="http://www.eclipse.org/equinox/documents/plugin-versioning.html">http://www.eclipse.org/equinox/documents/plugin-versioning.html</a></li>
-			<li>How To Keep Up To Date <a href="http://www.eclipse.org/articles/Article-Update/keeping-up-to-date.html">http://www.eclipse.org/articles/Article-Update/keeping-up-to-date.html</a>
-      </li>
-			<li>Plugging into SourceForge.net <a href="http://www.eclipse.org/articles/Article-Plugging-into-SourceForge/sourceforge.html">http://www.eclipse.org/articles/Article-Plugging-into-SourceForge/sourceforge.html</a>
-      </li>
+	<li>Version number : <a href="http://www.eclipse.org/equinox/documents/plugin-versioning.html">http://www.eclipse.org/equinox/documents/plugin-versioning.html</a></li>
+	<li>How To Keep Up To Date <a href="http://www.eclipse.org/articles/Article-Update/keeping-up-to-date.html">http://www.eclipse.org/articles/Article-Update/keeping-up-to-date.html</a></li>
+	<li>Plugging into SourceForge.net <a href="http://www.eclipse.org/articles/Article-Plugging-into-SourceForge/sourceforge.html">http://www.eclipse.org/articles/Article-Plugging-into-SourceForge/sourceforge.html</a></li>
     </ul>
+	</div>
   </body>
 </html>
