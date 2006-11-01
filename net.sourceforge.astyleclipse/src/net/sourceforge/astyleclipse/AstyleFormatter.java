@@ -11,16 +11,10 @@
 
 package net.sourceforge.astyleclipse;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.StringReader;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Vector;
 
 import net.sourceforge.astyleclipse.astyle.ASFormatter;
-import net.sourceforge.astyleclipse.astyle.ASStreamIterator;
 import net.sourceforge.astyleclipse.preferences.PreferenceConstants;
 import net.sourceforge.astyleclipse.astyle.ASResource;
 import net.sourceforge.astyleclipse.astyle.AStyle;
